@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div id="calc_body" class="bg-white mt-5 shadow-lg p-4 rounded-lg">
+        <div class="row">
+          <div class="col-12 border rounded-lg">
+            <input
+              id="screen"
+              class="input-group input-group-lg border-0 text-right"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-3 rounded-lg border operator bg-dark">
+            <button
+              id="id_/"
+              value="/"
+              type="button"
+              class="btn btn-lg m-1 operator bg-dark text-light"
+            >
+              /
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border operator bg-dark">
+            <button
+              id="id_*"
+              value="*"
+              type="button"
+              class="btn btn-lg m-1 operator bg-dark text-light"
+            >
+              *
+            </button>
+          </div>
+          <div class="col-6 rounded-lg border clear bg-warning">
+            <button
+              id="id_clear"
+              value="clear"
+              type="button"
+              class="btn btn-lg m-1 clear"
+            >
+              C
+            </button>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_7"
+              value="7"
+              type="button"
+              class="btn btn-lg rounded-lg m-1 digit"
+            >
+              7
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_8"
+              value="8"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              8
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_9"
+              value="9"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              9
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border operator bg-dark">
+            <button
+              id="id_-"
+              value="-"
+              type="button"
+              class="btn btn-lg m-1 operator text-light"
+            >
+              -
+            </button>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_4"
+              value="4"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              4
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_5"
+              value="5"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              5
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_6"
+              value="6"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              6
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border operator bg-dark">
+            <button
+              id="id_+"
+              value="+"
+              type="button"
+              class="btn btn-lg m-1 operator text-light"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_1"
+              value="1"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              1
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_2"
+              value="2"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              2
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border digit bg-secondary">
+            <button
+              id="id_3"
+              value="3"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              3
+            </button>
+          </div>
+          <div class="col-3 rounded-lg border dot bg-dark">
+            <button
+              id="id_."
+              value="."
+              type="button"
+              class="btn btn-lg m-1 dot text-light"
+            >
+              .
+            </button>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-6 rounded-lg border digit bg-secondary">
+            <button
+              id="id_0"
+              value="0"
+              type="button"
+              class="btn btn-lg m-1 digit"
+            >
+              0
+            </button>
+          </div>
+          <div class="col-6 bg-warning rounded-lg border equal">
+            <button
+              id="id_="
+              value="="
+              type="button"
+              class="btn btn-lg m-1 equal"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/calc2.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
